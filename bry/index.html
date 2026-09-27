@@ -53,11 +53,18 @@
                 text-transform:uppercase; margin-bottom:7px; }
   .encart p { color:#C9C0AC; font-size:14px; margin:0 0 12px; }
   .encart p b { color:#F1D27A; }
-  .lec2 { display:flex; gap:16px; flex-wrap:wrap; margin-bottom:14px; }
+  .encart .pa { margin:0 0 16px; }
+  .encart .pt { color:#EDE6D8; font-size:14px; font-weight:700; margin-bottom:3px; }
+  .encart .pd { color:#8B93A7; font-size:13px; margin:0 0 9px; }
+  .encart .note { color:#C4A05A; font-size:12.5px; line-height:1.5;
+                  border-left:2px solid #8A5A18; padding-left:9px; margin:9px 0 0; }
+  .lec2 .un { display:flex; align-items:center; gap:7px; margin-bottom:3px; }
+  .lec2 .un > span { font-size:11px; color:#6B7A94; min-width:74px; }
+  .lec2 { display:flex; gap:16px; flex-wrap:wrap; margin-bottom:0; }
   .lec2 > div { flex:1; min-width:250px; }
   .lec2 b { display:block; font-size:12px; color:#C9C0AC; margin-bottom:4px; }
   .lec2 b span { color:#6B7A94; font-weight:400; }
-  .lec2 audio { width:100%; height:30px; margin-bottom:4px; }
+  .lec2 audio { flex:1; height:30px; min-width:0; }
   .grille > div { display:flex; gap:10px; align-items:baseline; padding:2px 0;
                   font-size:14px; color:#C9C0AC; border-left:2px solid transparent; padding-left:8px; }
   .grille .h { font:11px Consolas, monospace; color:#F1D27A; min-width:42px; }
@@ -66,13 +73,18 @@
   .grille .fin { border-left-color:#8A5A18; color:#EDE6D8; }
   .grille .serre { border-left-color:#C4433A; background:rgba(196,67,58,.09); }
   .grille .serre i { color:#E88A83; }
+  @media (max-width:600px){
+    .grille > div { flex-wrap:wrap; }
+    .grille .d2 { min-width:72px; }
+    .grille i { flex-basis:100%; margin-left:82px; }
+  }
   footer { margin-top:40px; padding-top:18px; border-top:1px solid #243049;
            color:#55607A; font-size:13px; }
   @media (max-width:600px){ h1{font-size:26px} .page{padding:22px 13px 50px} }
 </style></head><body><div class="page">
   <div class="sur">Bohème Production</div>
   <h1>Bry — tes parties</h1>
-  <p class="intro">Tout est là, rien à installer. Tes __N__ blocs, chacun avec la bande
+  <p class="intro">Tout est là, rien à installer. Tes 9 blocs, chacun avec la bande
      <strong>avec les voix témoins</strong> et la bande <strong>du spectacle, sans voix</strong>.
      Chaque extrait démarre une seconde et demie avant, pour ne pas partir à froid.</p>
   <div class="cle">
@@ -176,18 +188,18 @@
     <div><b>Avec les voix témoins</b><audio controls preload="none" src="17-voix.mp3"></audio></div>
     <div><b>Sans les voix, la bande du spectacle</b><audio controls preload="none" src="17-instru.mp3"></audio></div>
   </div>
-  <div class="encart"><div class="et">⚠ Le passage le plus délicat</div><p>Le duo se termine à <b>22'35</b>. Ce qui suit, ce sont sept « Mon frère » qui s'échangent en vingt-cinq secondes, et deux d'entre eux ne sont séparés que d'une seconde. C'est là qu'on peut se télescoper.</p><div class="lec2"><div><b>La fin du duo <span>22&#x27;18 → 22&#x27;43</span></b><audio controls preload="none" src="17a-fin-du-duo-voix.mp3"></audio><audio controls preload="none" src="17a-fin-du-duo-instru.mp3"></audio></div><div><b>Le passage délicat <span>22&#x27;40 → 23&#x27;08</span></b><audio controls preload="none" src="17b-passage-delicat-voix.mp3"></audio><audio controls preload="none" src="17b-passage-delicat-instru.mp3"></audio></div></div><div class="grille">
+  <div class="encart"><div class="et">⚠ La fin de Mon Frère</div><p>Le duo se termine à <b>22'35</b>. Ce qui suit, ce sont sept « Mon frère » qui s'échangent en vingt-cinq secondes, et deux d'entre eux ne sont séparés que d'une seconde. C'est là qu'on peut se télescoper.</p><div class="pa"><div class="pt">La bande de répétition : l&#x27;instrumental et la voix de Mickaël seule</div><p class="pd">Ta propre ligne est vide, c&#x27;est à toi de la chanter. Tu as la réplique, pas le modèle.</p><div class="lec2"><div><b>Tout Mon Frère <span>2 min 13</span></b><div class="un"><span>écouter</span><audio controls preload="none" src="17-mon-frere-avec-la-voix-de-mickael.mp3"></audio></div></div><div><b>La fin seule <span>22&#x27;33 → 23&#x27;07</span></b><div class="un"><span>écouter</span><audio controls preload="none" src="17c-passage-delicat-avec-la-voix-de-mickael.mp3"></audio></div></div></div><p class="note">Sur quatre courts moments, 5,6 secondes en tout, vous chantez vraiment en même temps. Là ta voix reste audible dessous : impossible de retirer l'une sans l'autre, et je préfère te le dire que te livrer du son abîmé.</p></div><div class="pa"><div class="pt">La version normale, pour se repérer</div><p class="pd">Les deux voix, puis l&#x27;instrumental seul.</p><div class="lec2"><div><b>La fin du duo <span>22&#x27;18 → 22&#x27;43</span></b><div class="un"><span>avec les voix</span><audio controls preload="none" src="17a-fin-du-duo-voix.mp3"></audio></div><div class="un"><span>sans</span><audio controls preload="none" src="17a-fin-du-duo-instru.mp3"></audio></div></div><div><b>Le passage délicat <span>22&#x27;40 → 23&#x27;08</span></b><div class="un"><span>avec les voix</span><audio controls preload="none" src="17b-passage-delicat-voix.mp3"></audio></div><div class="un"><span>sans</span><audio controls preload="none" src="17b-passage-delicat-instru.mp3"></audio></div></div></div></div><div class="grille">
    <div><span class="h">22'24</span><span class="d2">Mickaël et Bry</span>L'amour s'ra toujours cette moitié de nous qui reste</div>
    <div><span class="h">22'30</span><span class="d2">Mickaël</span>À faire</div>
    <div><span class="h">22'32</span><span class="d2">Bry</span>À faire</div>
    <div class="fin"><span class="h">22'35</span><span class="d2">Ensemble</span>Mon frère.&nbsp;&nbsp;<i>fin du duo</i></div>
    <div><span class="h">22'44</span><span class="d2">Bry</span>Mon frère, mon frère</div>
-   <div><span class="h">22'46</span><span class="d2">Mickaël</span>Mon frère</div>
+   <div><span class="h">22'46</span><span class="d2">Mickaël</span>Mon frère&nbsp;&nbsp;<i>il entre pendant que tu tiens encore</i></div>
    <div><span class="h">22'49</span><span class="d2">Mickaël</span>Mon frère</div>
    <div class="serre"><span class="h">22'50</span><span class="d2">Bry</span>Mon frère&nbsp;&nbsp;<i>1,2 s après</i></div>
    <div class="serre"><span class="h">22'51</span><span class="d2">Mickaël</span>Mon frère…&nbsp;&nbsp;<i>1,1 s après</i></div>
-   <div><span class="h">22'53</span><span class="d2">Bry</span>Mon frère !</div>
-   <div><span class="h">23'00</span><span class="d2">Mickaël</span>Mon frère !&nbsp;&nbsp;<i>sept secondes de silence avant</i></div>
+   <div><span class="h">22'53</span><span class="d2">Bry</span>Mon frère&nbsp;!&nbsp;&nbsp;<i>tenu neuf secondes</i></div>
+   <div><span class="h">23'00</span><span class="d2">Mickaël</span>Mon frère&nbsp;!&nbsp;&nbsp;<i>il entre par-dessus, tu tiens toujours</i></div>
  </div></div>
   <div class="g autres"><div class="qui">Mickaël</div><div class="l"><span class="h">20:55</span><span class="tx">Bien sûr qu&#x27;un jour s&#x27;en va pour l&#x27;un, et pour l&#x27;autre s&#x27;en vient.</span></div><div class="l"><span class="h">21:03</span><span class="tx">Bien sûr, les étoiles se meurent quand le ciel s&#x27;éteint.</span></div><div class="l"><span class="h">21:10</span><span class="tx">C&#x27;est notre amour qui n&#x27;aura jamais de lendemain</span></div><div class="l"><span class="h">21:16</span><span class="tx">Mon frère.</span></div></div><div class="g solo"><div class="qui">Bry seul</div><div class="l"><span class="h">21:21</span><span class="tx">Bien plus qu&#x27;un monde qui s&#x27;ouvre à l&#x27;un, et pour l&#x27;autre chavire</span></div><div class="l"><span class="h">21:28</span><span class="tx">Bien plus qu&#x27;une mer qui supplie quand la source est tarie</span></div><div class="l"><span class="h">21:35</span><span class="tx">C&#x27;est tout notre amour qui s&#x27;éloigne des rives et se perd</span></div><div class="l"><span class="h">21:41</span><span class="tx">Mon frère.</span></div></div><div class="g autres"><div class="qui">Mickaël</div><div class="l"><span class="h">21:45</span><span class="tx">Puisqu&#x27;on ne sera toujours que la moitié d&#x27;un tout</span></div></div><div class="g solo"><div class="qui">Bry seul</div><div class="l"><span class="h">21:56</span><span class="tx">Puisqu&#x27;on ne sera jamais que la moitié de nous</span></div><div class="l"><span class="h">22:05</span><span class="tx">Que la moitié, que la moitié de nous…</span></div></div><div class="g autres"><div class="qui">Mickaël</div><div class="l"><span class="h">22:13</span><span class="tx">Mon frère</span></div></div><div class="g solo"><div class="qui">Bry seul</div><div class="l"><span class="h">22:13</span><span class="tx">Oh, oh, oh, oh, mon frère</span></div></div><div class="g autres"><div class="qui">Mickaël</div><div class="l"><span class="h">22:16</span><span class="tx">Mon frère</span></div></div><div class="g solo"><div class="qui">Bry seul</div><div class="l"><span class="h">22:17</span><span class="tx">Mon frère</span></div></div><div class="g autres"><div class="qui">Mickaël</div><div class="l"><span class="h">22:19</span><span class="tx">Mon frère.</span></div></div><div class="g avec"><div class="qui">Mickaël et Bry</div><div class="l"><span class="h">22:24</span><span class="tx">L&#x27;amour s&#x27;ra toujours cette moitié de nous qui reste</span></div></div><div class="g autres"><div class="qui">Mickaël</div><div class="l"><span class="h">22:30</span><span class="tx">À faire</span></div></div><div class="g solo"><div class="qui">Bry seul</div><div class="l"><span class="h">22:32</span><span class="tx">À faire</span></div></div><div class="g avec"><div class="qui">Mickaël et Bry</div><div class="l"><span class="h">22:35</span><span class="tx">Mon frère.</span></div></div><div class="g solo"><div class="qui">Bry seul</div><div class="l"><span class="h">22:44</span><span class="tx">Mon frère, mon frère</span></div></div><div class="g autres"><div class="qui">Mickaël</div><div class="l"><span class="h">22:46</span><span class="tx">Mon frère</span></div><div class="l"><span class="h">22:49</span><span class="tx">Mon frère</span></div></div><div class="g solo"><div class="qui">Bry seul</div><div class="l"><span class="h">22:50</span><span class="tx">Mon frère</span></div></div><div class="g autres"><div class="qui">Mickaël</div><div class="l"><span class="h">22:51</span><span class="tx">Mon frère…</span></div></div><div class="g solo"><div class="qui">Bry seul</div><div class="l"><span class="h">22:53</span><span class="tx">Mon frère !</span></div></div><div class="g autres"><div class="qui">Mickaël</div><div class="l"><span class="h">23:00</span><span class="tx">Mon frère !</span></div></div>
 </section>
